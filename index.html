@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimsum Premium | Lezat & Higienis</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="logo-brand text-2xl font-black text-[#ff9626] italic tracking-tighter uppercase">
+                UNIMO<span class="text-gray-900">DIMSUM.</span>
+            </h1>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#tentang" class="nav-link">Tentang</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#lokasi" class="nav-link">Lokasi</a>
+            </div>
+
+            <button onclick="orderWA('Halo')" onclick="orderWA('Halo')"
+                class="btn-primary px-6 py-2 rounded-full font-bold text-xs shadow-lg transition">
+                PESAN SEKARANG
+            </button>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-wrapper">
+        <img src="img/bg1.jpg" alt="Background Dimsum" class="hero-image-source">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <span class="badge-premium text-[10px] mb-6">
+                Premium Homemade Quality
+            </span>
+            <h2
+                class="hero-title text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tighter uppercase text-white">
+                Lezatnya <span class="text-highlight">Dimsum</span> <br> Asli Daging Pilihan
+            </h2>
+            <p class="hero-desc max-w-xl mx-auto text-lg md:text-xl text-white opacity-90 mb-10 italic font-light">
+                "Dibuat setiap hari dengan bahan segar tanpa bahan pengawet untuk keluarga Anda."
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#menu" href="#menu"
+                    class="btn-cek-menu px-10 py-4 rounded-full font-bold text-lg transition shadow-xl">
+                    Menu Kami
+                </a>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="tentang" class="py-24 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div
+                class="card p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-2">
+                <div class="icon-box"><i class="fas fa-check-circle"></i></div>
+                <h4 class="text-xl font-bold mb-3 uppercase tracking-tighter">Bahan Segar</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Menggunakan 100% daging ikan tuna segar setiap
+                    harinya.</p>
+            </div>
+            <div
+                class="card p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-2">
+                <div class="icon-box"><i class="fas fa-heart"></i></div>
+                <h4 class="text-xl font-bold mb-3 uppercase tracking-tighter">Tanpa Pengawet</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Aman dikonsumsi anak-anak karena tidak menggunakan
+                    pengawet kimia.</p>
+            </div>
+            <div
+                class="card p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-2">
+                <div class="icon-box"><i class="fas fa-star"></i></div>
+                <h4 class="text-xl font-bold mb-3 uppercase tracking-tighter">Rasa Otentik</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Resep keluarga yang sudah teruji kelezatannya selama
+                    bertahun-tahun.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-black text-center mb-16 uppercase tracking-widest">Daftar Menu Favorit</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <div class="menu-card bg-white rounded-[2.5rem] overflow-hidden shadow-sm">
+                    <img src="img/5.jpg" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-2">Dimsum Kukus</h4>
+                        <p class="text-gray-400 text-xs mb-6 uppercase tracking-widest italic">Original & Juicy</p>
+                        <div class="flex justify-between items-center border-t pt-6">
+                            <span class="text-2xl font-black text-red-600">Rp 16.000</span>
+                            <button onclick="orderWA('Dimsum Kukus')"
+                                class="bg-green-500 text-white px-6 py-2 rounded-xl font-bold text-xs hover:bg-green-600 transition uppercase">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-[2.5rem] overflow-hidden shadow-sm">
+                    <img src="img/6.jpg" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-2">Dimsum Goreng</h4>
+                        <p class="text-gray-400 text-xs mb-6 uppercase tracking-widest italic">Crispy & Savory</p>
+                        <div class="flex justify-between items-center border-t pt-6">
+                            <span class="text-2xl font-black text-red-600">Rp 16.000</span>
+                            <button onclick="orderWA('Dimsum Goreng')"
+                                class="bg-green-500 text-white px-6 py-2 rounded-xl font-bold text-xs hover:bg-green-600 transition uppercase">Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-[2.5rem] overflow-hidden shadow-sm">
+                    <img src="img/7.jpg" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-2">Frozen Pack (5 pcs)</h4>
+                        <p class="text-gray-400 text-xs mb-6 uppercase tracking-widest italic">Stok di Rumah</p>
+                        <div class="flex justify-between items-center border-t pt-6">
+                            <span class="text-2xl font-black text-red-600">Rp 15.000</span>
+                            <button onclick="orderWA('Frozen Pack')"
+                                class="bg-green-500 text-white px-6 py-2 rounded-xl font-bold text-xs hover:bg-green-600 transition uppercase">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="py-24 container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-black uppercase tracking-widest mb-4">Lokasi Kami</h3>
+                <p class="text-gray-500 italic font-light italic">Kunjungi outlet kami untuk rasa yang lebih maksimal
+                </p>
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white p-6 rounded-[3rem] shadow-sm border border-gray-100">
+                <div class="rounded-[2.5rem] overflow-hidden h-[400px] shadow-inner border border-gray-200">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.495013492352!2d112.76287387357299!3d-7.298146892709476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa59f7ceaaab%3A0x7b0064db2aec0acd!2sSekolah%20Menengah%20Kejuruan%20Unitomo%20Surabaya!5e0!3m2!1sid!2sid!4v1768355622735!5m2!1sid!2sid"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="space-y-8 p-4">
+                    <div>
+                        <h4 class="text-lokasi-title text-2xl mb-4">Unimo Surabaya</h4>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Jl. Semolowaru No.84, Menur Pumpungan, <br>
+                            Kec. Sukolilo, Surabaya, Jawa Timur 60119
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-4 text-gray-700">
+                                <span
+                                    class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center"><i
+                                        class="fas fa-clock"></i></span>
+                                <span class="text-sm font-bold uppercase tracking-tight">Buka: 08.00 – 12.00 WIB</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-gray-700">
+                                <span
+                                    class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><i
+                                        class="fas fa-phone"></i></span>
+                                <span class="text-sm font-bold uppercase tracking-tight">+62 882-0095-49480</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-white py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h4 class="text-2xl font-black footer-brand-name italic tracking-tighter uppercase mb-2">
+                UNIMO<span class="text-white">DIMSUM</span>
+            </h4>
+            <p class="text-gray-600 text-xs uppercase tracking-widest mb-8">Premium Taste Culinary</p>
+
+            <div class="flex justify-center gap-10 text-2xl mb-10 footer-social">
+                <a href="https://instagram.com/unimodimsum.2025" target="_blank"
+                    class="hover:text-[#ff9626] transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://tiktok.com/@dimsum.unimo" target="_blank" class="hover:text-[#ff9626] transition">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            © 2026 Unimodimsum Indonesia
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
