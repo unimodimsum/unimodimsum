@@ -3,7 +3,7 @@
  * @param {string} product - Nama produk yang ingin dipesan
  */
 function orderWA(product) {
-    const phoneNumber = "882009549480"; // GANTI DENGAN NOMOR WHATSAPP ANDA
+    const phoneNumber = "+62882009549480"; // GANTI DENGAN NOMOR WHATSAPP ANDA
     let message = "";
 
     if (product === 'Halo' || product === 'Tanya') {
